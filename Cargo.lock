@@ -232,7 +232,7 @@ dependencies = [
  "objc2-foundation 0.3.2",
  "parking_lot",
  "percent-encoding",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
  "wl-clipboard-rs",
  "x11rb",
 ]
@@ -1816,7 +1816,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb"
 dependencies = [
  "libc",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -2393,15 +2393,15 @@ dependencies = [
 
 [[package]]
 name = "harfrust"
-version = "0.13.3"
+version = "0.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "948d0741125ba89cd3e1c23e5642415b6ade7e1d29d67ba25fb925b533e989d6"
+checksum = "741c9cd8fb2f39c393366b9cf13e8c31ad6adbbd9d817f0a18fe47cff36a3cca"
 dependencies = [
  "bitflags 2.13.2",
  "bytemuck",
- "once_cell",
- "read-fonts 0.43.3",
+ "read-fonts 0.47.0",
  "smallvec",
+ "yoke",
 ]
 
 [[package]]
@@ -4106,7 +4106,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7d8fae84b431384b68627d0f9b3b1245fcf9f46f6c0e3dc902e9dce64edd1967"
 dependencies = [
  "libc",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -4628,7 +4628,7 @@ dependencies = [
  "once_cell",
  "socket2",
  "tracing",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -4760,9 +4760,9 @@ dependencies = [
 
 [[package]]
 name = "read-fonts"
-version = "0.43.3"
+version = "0.44.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "005c8acf251756c478b0bf402885bfd88a1476020c4c7e6060edc1aa68da38ea"
+checksum = "d5a0cf4bb6cbce4c29756270d189a5e400ac05e91192161d83a0bcb6e68492e8"
 dependencies = [
  "bytemuck",
  "font-types 0.12.7",
@@ -4771,13 +4771,16 @@ dependencies = [
 
 [[package]]
 name = "read-fonts"
-version = "0.44.0"
+version = "0.47.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d5a0cf4bb6cbce4c29756270d189a5e400ac05e91192161d83a0bcb6e68492e8"
+checksum = "a39d2f8f681030a7bcbbcf3e8568775ac2393afd51401a2e2133ee89e3953897"
 dependencies = [
  "bytemuck",
+ "foldhash 0.2.0",
  "font-types 0.12.7",
  "once_cell",
+ "smallvec",
+ "yoke",
 ]
 
 [[package]]
@@ -5003,7 +5006,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys 0.12.1",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -5062,7 +5065,7 @@ dependencies = [
  "security-framework",
  "security-framework-sys",
  "webpki-root-certs",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -5584,6 +5587,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "skrifa"
+version = "0.50.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e85ba678a6023a063d0a78c8770f1c166674ef46af13523d05eff67430f79dfe"
+dependencies = [
+ "bytemuck",
+ "once_cell",
+ "read-fonts 0.47.0",
+ "smallvec",
+ "yoke",
+]
+
+[[package]]
 name = "slab"
 version = "0.4.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5786,7 +5802,7 @@ dependencies = [
  "kurbo 0.13.1",
  "rustc-hash 2.1.3",
  "skrifa 0.42.1",
- "write-fonts",
+ "write-fonts 0.48.1",
 ]
 
 [[package]]
@@ -5927,7 +5943,7 @@ dependencies = [
  "getrandom 0.4.3",
  "once_cell",
  "rustix 1.1.6",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -6754,7 +6770,7 @@ dependencies = [
  "same-file",
  "serde",
  "serde_json",
- "skrifa 0.47.0",
+ "skrifa 0.50.0",
  "thiserror 2.0.21",
  "tiff",
  "vectorcraft-affinity",
@@ -6799,7 +6815,7 @@ dependencies = [
  "memchr",
  "ruzstd",
  "serde_json",
- "skrifa 0.47.0",
+ "skrifa 0.50.0",
  "vectorcraft-brush",
  "vectorcraft-color",
  "vectorcraft-doc",
@@ -6946,7 +6962,7 @@ dependencies = [
  "serde_json",
  "sha2",
  "siphasher",
- "skrifa 0.47.0",
+ "skrifa 0.50.0",
  "smallvec",
  "thiserror 2.0.21",
  "vectorcraft-brush",
@@ -7031,7 +7047,7 @@ dependencies = [
  "serde",
  "serde_json",
  "simplecss",
- "skrifa 0.47.0",
+ "skrifa 0.50.0",
  "svgtypes 0.16.1",
  "thiserror 2.0.21",
  "unicode-bidi",
@@ -7068,11 +7084,11 @@ dependencies = [
 name = "vectorcraft-text"
 version = "0.24.1"
 dependencies = [
- "harfrust 0.13.3",
+ "harfrust 0.16.0",
  "icu_segmenter",
  "kurbo 0.13.1",
  "log",
- "skrifa 0.47.0",
+ "skrifa 0.50.0",
  "subsetter",
  "unicode-bidi",
  "unicode-general-category",
@@ -7082,7 +7098,7 @@ dependencies = [
  "vectorcraft-geom 0.24.1",
  "vello_cpu",
  "windows-registry",
- "write-fonts",
+ "write-fonts 0.56.0",
 ]
 
 [[package]]
@@ -7806,7 +7822,7 @@ version = "0.1.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c2a7b1c03c876122aa43f3020e6c3c3ee5c05081c9a00739faf7503aeba10d22"
 dependencies = [
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -8164,6 +8180,19 @@ dependencies = [
  "kurbo 0.13.1",
  "log",
  "read-fonts 0.39.2",
+]
+
+[[package]]
+name = "write-fonts"
+version = "0.56.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "944049531d52f9002812ea9de23ec8aa4e9577a7bee6869a1d0f297c679817ea"
+dependencies = [
+ "font-types 0.12.7",
+ "indexmap",
+ "kurbo 0.13.1",
+ "log",
+ "read-fonts 0.47.0",
 ]
 
 [[package]]
